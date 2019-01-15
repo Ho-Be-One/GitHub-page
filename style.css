@@ -3,17 +3,18 @@ width: 90%;
  margin: 20px auto;
  padding: 0;
  color: #404040;
- font-size: 13px;
-font-family: Helvetica;
+ font-size: 100%;
+font-family: 'Mukta', sans-serif;
 }
 body {
  background-color: #fcfbfb; 
- font-family: Verdana, sans-serif; 
- font-size: 100%;
 }
 h1 {
  font-size: 200%; 
  }
+header h1{
+font-family: 'Righteous', cursive;
+}
 h2 {
  font-size: 150%; 
  }
@@ -22,7 +23,7 @@ h3 {
  }
 p,ul,li,td {
  color: #404040;
- font-size: 13px;
+ font-size: 15px;
  line-height:125%;
  }
 a:link {
@@ -41,12 +42,16 @@ a:active, a:focus {
 }
 img {
 	width: 50%;
+	border: 1px solid #ddd;
 	border-radius: 3px;
-	margin: 15px 0;
+	padding: 7px;
+}
+img + legend {
+  color: #787878;
 }
 blockquote, .villageois, .fermier{
 	width: 45%;
-	margin: 30 auto;
+	margin: 30px auto;
 	font-size: 120%;
 	padding: 30px;
 	border-radius: 0 3px 3px 0;
@@ -62,8 +67,85 @@ blockquote, .villageois, .fermier{
 
 }
 header{
-	border: 1px solid #e8c41d;
+	border: 1px solid #e0e0e0;
+	padding: 10px 30px;
+	border-radius: 3px;
+}
+header p{
+	border-left: 3px solid #e8c41d;
 	background-color: #fcf3b8;
 	padding: 30px;
-	border-radius: 3px;
+}
+.bien, .mal{
+text-transform: uppercase;
+}
+.bien{
+color: #1e8c08
+}
+.mal{
+color: #b30e24
+}
+.villageois, .fermier{
+
+}
+li:first-of-type + li {
+  color: red;
+}
+table
+{
+    border-collapse: collapse;
+    margin: 10px 0;
+}
+td, th
+{
+    padding: 10px;
+    border: 1px solid #d3d3d3;
+}
+th{
+	background-color: #a1a1a1;
+	color:#ffffff;
+}
+tr:nth-child(even){
+	background-color: #e4e4e4;
+}
+tr:nth-child(odd){
+	background-color: #ffffff;
+}
+.pice-bien, .pice-mal, .pice-chat{
+	height: 18px;
+	width: 18px;
+	background-color: transparent;
+	background-image: url("img/bien.png");
+	background-repeat: no-repeat;
+	background-size: 18px 18px;
+	float: left;
+	margin: 0 10px 0 10px;
+
+}
+.pice-mal{
+	background-image: url("img/mal.png");
+	top : 9px;
+}
+.pice-chat{
+	background-image: url("img/chat.png");
+}
+ul{
+	border: 1px solid #bdbdbd;
+	padding: 0;
+	margin: 10px 0 15px 0;
+	list-style: none;
+}
+ul li{
+	padding: 8px 0;
+	border-bottom: 1px solid #bdbdbd;
+	
+}
+ul > li:last-child {
+	 font-weight: bold;
+	 padding: 8px 0 8px 38px;
+	 border-bottom: 1px solid transparent;
+
+}
+ul li:nth-child(even){
+	background-color: #e4e4e4;
 }
