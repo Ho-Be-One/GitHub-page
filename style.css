@@ -41,12 +41,22 @@ a:active, a:focus {
  color: red;
 }
 img {
-	width: 50%;
+	width: 300px;
 	border: 1px solid #ddd;
 	border-radius: 3px;
 	padding: 7px;
+	margin: 0 20px 0px 0;
 }
-img + legend {
+.image-container{
+	float: left;
+}
+figure{
+	width: auto;
+	margin: 0;
+	float: left;
+	
+}
+.image-container + figcaption {
   color: #787878;
 }
 blockquote, .villageois, .fermier{
@@ -114,7 +124,6 @@ tr:nth-child(odd){
 .pice-bien, .pice-mal, .pice-chat{
 	height: 18px;
 	width: 18px;
-	background-color: transparent;
 	background-image: url("img/bien.png");
 	background-repeat: no-repeat;
 	background-size: 18px 18px;
@@ -124,28 +133,36 @@ tr:nth-child(odd){
 }
 .pice-mal{
 	background-image: url("img/mal.png");
-	top : 9px;
 }
 .pice-chat{
 	background-image: url("img/chat.png");
 }
+header + p{
+	margin-bottom: 0;
+}
 ul{
-	border: 1px solid #bdbdbd;
+	border: 1px solid #e6e6e6;
 	padding: 0;
-	margin: 10px 0 15px 0;
+	margin: 5px 0 15px 0;
 	list-style: none;
+	border-radius: 3px;
 }
 ul li{
-	padding: 8px 0;
-	border-bottom: 1px solid #bdbdbd;
-	
+	padding: 8px 0;	
 }
 ul > li:last-child {
 	 font-weight: bold;
 	 padding: 8px 0 8px 38px;
-	 border-bottom: 1px solid transparent;
-
 }
 ul li:nth-child(even){
-	background-color: #e4e4e4;
+	background-color: #f0efeb;
+}
+.blocktext{
+	height: auto;
+	width: 100%;
+	padding: 10px 0;
+	float: left;
+}
+.blocktext p{
+	margin-top: 0;
 }
