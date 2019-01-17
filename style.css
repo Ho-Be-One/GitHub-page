@@ -9,12 +9,12 @@ font-family: 'Mukta', sans-serif;
 body {
  background-color: #fcfbfb; 
 }
+h1, h2, h3{
+font-family: 'Righteous', cursive;
+}
 h1 {
  font-size: 200%; 
  }
-header h1{
-font-family: 'Righteous', cursive;
-}
 h2 {
  font-size: 150%; 
  }
