@@ -56,7 +56,7 @@ figure{
 	float: left;
 	
 }
-.image-container + figcaption {
+img + figcaption {
   color: #787878;
 }
 blockquote, .villageois, .fermier{
